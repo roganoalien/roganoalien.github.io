@@ -1,0 +1,37 @@
+.projects-list{
+	@include flex-container(center, column, center, nowrap);
+	background: rgba($c-black, .025);
+	border: 2px dashed rgba($c-black, .15);
+	min-height: 300px;
+	width: 100%;
+	li{
+		margin-bottom: 20px;
+		a{
+			color: $c-black;
+			font-size: 50px;
+			font-weight: $black;
+			position: relative;
+			text-decoration: none;
+			-webkit-text-stroke: 2px transparent;
+			transition: all .15s ease-in-out;
+			&:after{
+				@include position-select(50%, -5px, absolute, true, false);
+				content: " ";
+				background: $c-purple;
+				height: 2px;
+				transform: translateX(-50%);
+				transition: width .5s ease-in-out;
+				width: 0;
+			}
+		}
+		&:hover{
+			a{
+				color: transparent;
+				-webkit-text-stroke: 2px $c-purple;
+				&:after{
+					width: 120%;
+				}
+			}
+		}
+	}
+}

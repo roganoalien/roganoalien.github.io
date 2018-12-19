@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="30px" viewBox="0 0 24 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ui/@title" transform="translate(0.000000, -8.000000)">
+            <g id="Group" transform="translate(0.000000, 8.000000)">
+                <polygon id="Triangle-Copy" fill="#6153CC" transform="translate(12.000000, 15.000000) rotate(-270.000000) translate(-12.000000, -15.000000) " points="12 3 27 27 -3 27"></polygon>
+                <polygon id="Triangle" fill="#353535" transform="translate(8.000000, 15.000000) rotate(-270.000000) translate(-8.000000, -15.000000) " points="8 7 23 23 -7 23"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

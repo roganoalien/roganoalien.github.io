@@ -1,8 +1,10 @@
 body{
 	background: $c-white;
 	color: $c-black;
-	font-family: $f-regular;
+	font-family: $font;
 	font-size: 16px;
+	font-weight: $regular;
+	letter-spacing: .5px;
 	overflow-x: hidden;
 	width: 100vw;
 }
@@ -17,4 +19,65 @@ body{
 .hide{
 	position: absolute;
 	opacity: 0;
+}
+.r-title{
+	color: $c-purple;
+	font-size: 25px;
+	font-weight: $black;
+	padding-left: 30px;
+	position: relative;
+	text-transform: uppercase;
+	&:after{
+		@include position-select(0,0);
+		content: '';
+		background: url('../images/title.svg') no-repeat left center;
+		background-size: contain;
+		height: 100%;
+		width: 20px;
+	}
+}
+
+.r-container{
+	@include flex-container(flex-start, row, center, wrap);
+	margin: 0 auto;
+	max-width: 940px;
+	width: 100vw;
+	.r-row{
+		@include flex-container(flex-start, row, flex-start, nowrap);
+		margin-bottom: 20px;
+		max-width: 940px;
+		width: 100%;
+	}
+	.r-column{
+		margin-right: 20px;
+		width: 100%;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	@media (max-width: 768px){
+		flex-wrap: wrap;
+		.r-column{
+			margin-right: 2%;
+			width: 49%;
+			&:nth-child(even){
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+footer{
+	@include flex-container(center, column, center, nowrap);
+	background: rgba($c-black, .05);
+	height: 100px;
+	margin-top: 50px;
+	a{
+		color: $c-purple;
+	}
+	p{
+		color: rgba($c-black, .5);
+		font-weight: $bold;
+		margin: 0;
+	}
 }
