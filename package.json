@@ -1,0 +1,19 @@
+{
+  "name": "roganoalien.github.io",
+  "version": "1.0.0",
+  "description": "Index para mi github page",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roganoalien/roganoalien.github.io.git"
+  },
+  "author": "Rodrigo García",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/roganoalien/roganoalien.github.io/issues"
+  },
+  "homepage": "https://github.com/roganoalien/roganoalien.github.io#readme"
+}
