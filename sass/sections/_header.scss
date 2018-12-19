@@ -13,5 +13,11 @@
 			max-width: 400px;
 			width: 80%
 		}
+		.mouse{
+			@include position-select(50%, 65%);
+			height: auto;
+			width: 30px;
+			transform: translate(-50%, 0);
+		}
 	}
 }
