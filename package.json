@@ -4,7 +4,7 @@
   "description": "Index para mi github page",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "gulp dev"
   },
   "repository": {
     "type": "git",

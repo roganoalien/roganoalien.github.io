@@ -1,0 +1,17 @@
+.main-header{
+	// @include angled-edge('inside bottom', 'upper right', $c-purple, 200);
+	background: linear-gradient(5deg, $c-white 20%, $c-purple 20.3% 23%, $c-black 23.3%);
+	height: 90vh;
+	width: 100vw;
+	article{
+		@include flex-container();
+		height: 100%;
+		width: 100%;
+		img{
+			height: auto;
+			margin-top: -40px;
+			max-width: 400px;
+			width: 80%
+		}
+	}
+}

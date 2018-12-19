@@ -9,14 +9,14 @@ const	gulp		= require('gulp'),
 		rename		= require('gulp-rename'),
 		sass		= require('gulp-sass'),
 		sourcemaps	= require('gulp-sourcemaps'),
-		log			= require('./logger')();
+		log			= require('./logger');
 
 /***************
  * CONFIG VARS *
  ***************/
 const	_$sass	= './sass/**/*.scss',
 		_$main	= './sass/main.scss',
-		_$css	=  './public/css/';
+		_$css	=  './css/';
 
 /***************************************************
  *                      SASS                       *
@@ -32,7 +32,7 @@ gulp.task('sass', () => {
 			browsers: ['last 2 versions'],
 			cascade: true
 		}))
-		.pipe(rename('main.min.scss'))
+		.pipe(rename('main.min.css'))
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest(_$css))
 		.pipe(connect.reload())
@@ -54,4 +54,4 @@ gulp.task('watchers', (done) => {
 /**********************
  * TASKS TO BE CALLED *
  **********************/
-gulp.task('dev', gulp.parallel('watchers'));
+gulp.task('dev', gulp.series('sass', gulp.parallel('watchers')));
