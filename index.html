@@ -7,6 +7,14 @@
 	<title>Rodrigo García | Github Page</title>
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
 	<link rel="stylesheet" href="./css/main.min.css">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131144122-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-131144122-1');
+	</script>
 </head>
 <body>
 	<section class="main-header">
@@ -23,10 +31,10 @@
 		<article class="r-row">
 			<ul class="projects-list r-column">
 				<li class="project-item">
-					<a href="/grinch-lista-tareas" target="_blank">Lista de Tareas</a>
+					<a href="/grinch-lista-tareas" target="_blank" onclick="ga('send', 'event', 'Visit', 'Project', 'Lista de Tareas');">Lista de Tareas</a>
 				</li>
 				<li class="project-item">
-					<a href="/rogano-lazy" target="_blank">Lazy Loader</a>
+					<a href="/rogano-lazy" target="_blank" onclick="ga('send', 'event', 'Visit', 'Project', 'Lazy Loader');">Lazy Loader</a>
 				</li>
 			</ul>
 		</article>
